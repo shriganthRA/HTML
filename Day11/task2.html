@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: black;
+            width: fit-content;
+            color: whitesmoke;
+            padding: 16px;
+            width: 440px;
+            border-radius: 8px;
+        }
+
+        .inputstyle {
+            background-color: gray;
+            border-radius: 4px;
+            height: 24px;
+        }
+
+        .background {
+            background-color: rgb(179, 155, 71);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="background">
+
+    <div class="box">
+        <h2 style="text-align: center;">Request a free trail</h2>
+
+        <form action="./result.html" method="get">
+            <div style="margin-bottom: 16px;">
+                <label for="fullname">Name</label>
+                <div style="display: flex; gap: 16px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="text" name="first" placeholder="" class="inputstyle" style="width: 204px;" />
+                        <label for="first">First</label>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="text" name="last" placeholder="" class="inputstyle" style="width: 204px;" />
+                        <label for="last">Last</label>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; margin-bottom: 16px;">
+                <label for="email">Email</label>
+                <input type="email" required class="inputstyle" />
+            </div>
+
+            <div style="display: flex; flex-direction: column; margin-bottom: 16px;">
+                <label for="companyName">Company Name</label>
+                <input type="text" name="companyName" id="" required class="inputstyle" />
+            </div>
+
+            <div style=" margin-bottom: 16px;">
+                <label for="companyAddress">Company Address</label>
+                <div style="display: flex; flex-direction: column;  margin-bottom: 16px;">
+                    <input type="text" name="streetAddress" required class="inputstyle" />
+                    <label for="streetAddress">Street Address</label>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <input type="text" name="addressLine2" required class="inputstyle" />
+                    <label for="addressLine2">Address Line 2</label>
+                </div>
+            </div>
+
+            <div style="display: flex; margin-bottom: 16px;  gap: 16px;">
+                <div style="display: flex; flex-direction: column;">
+                    <input type="text" name="city" required class="inputstyle" style="width: 204px;">
+                    <label for="city">City</label>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <input type="text" name="state" id="" required class="inputstyle" style="width: 204px;">
+                    <label for="state">State/Region/Province</label>
+                </div>
+            </div>
+
+            <div style="display: flex; margin-bottom: 16px; gap: 16px;">
+                <div style="display: flex; flex-direction: column;">
+                    <input type="text" name="postalCode" id="" required class="inputstyle" style="width: 204px;">
+                    <label for="postalCode">Postal / Zip Code</label>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <select name="country" id="" required class="inputstyle" style="width: 204px; color: white;">
+                        <option value="america">America</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="united kingdom">United Kingdom</option>
+                        <option value="europe">Europe</option>
+                        <option value="china">China</option>
+                        <option value="japan">Japan</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="srilanka">Srilanka</option>
+                    </select>
+                    <label for="country">country</label>
+                </div>
+            </div>
+
+            <input type="submit"
+                style="display: flex; margin: auto; background-color: orangered; color: white; height: 40px; width: 90px; border: none; border-radius: 16px;">
+        </form>
+    </div>
+
+</body>
+
+</html>

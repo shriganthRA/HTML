@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 {
+    background-color: #AE70C7;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 420px;
+    color: white;
+}
+
+.container2 {
+    background-color: #803F9E;
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    padding: 8px;
+    font-weight: lighter;
+    font-size: small;
+    color: white;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 160px;
+    row-gap: 8px;
+    margin-bottom: 24px;
+}
+
+.inputContainer {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 48px 48px;
+    gap: 8px;
+}
+
+.box1 {
+    border: none;
+    height: 48px;
+    width: 48px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFC9E8;
+}
+
+.box2 {
+    border: none;
+    height: 48px;
+    width: 48px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFC9E8;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: #AE70C7;
+}
+
+.textInput {
+    height: 30px;
+    width: 300px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 80px;
+}
+
+.inputLabel {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: medium;
+    color: #565656;
+}
+
+.submit {
+    display: flex;
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #803F9E;
+    color: white;
+    font-size: medium;
+}
+
+.companyName {
+    font-size: small;
+}
+
+.required {
+    color: red;
+}
+
+.iconcontainer {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.iconstyle {
+    width: 18px;
+    height: 18px;
+}

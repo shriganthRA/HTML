@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .checked {
+            color: orange;
+        }
+
+        .background {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .inputdiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputstyle {
+            height: 24px;
+            background-color: #132839;
+            border: 1px solid white;
+            width: 254px;
+            color: white;
+            padding-left: 8px;
+        }
+
+        .textareastyle {
+            background-color: #132839;
+            border: 1px solid white;
+            color: white;
+            padding-left: 8px;
+        }
+    </style>
+</head>
+
+<body class="background">
+
+    <div style="width: 600px;">
+        <div style="text-align: center; background-color: #FD636D; color: white; padding: 4px;">
+            <h2>Resignation Form</h2>
+            <p>You've decided to leave us. Sad. Please fill out this form so that we know of your experience with us</p>
+        </div>
+
+        <div style="background-color: #132839; padding: 24px;">
+
+            <form action="./result.html " method="get">
+                <div style="margin-bottom: 16px;">
+                    <label for="fullname">Name</label>
+                    <div style="display: flex; gap: 16px; margin-top: 4px;">
+                        <div class="inputdiv">
+                            <input type="text" name="first" required class="inputstyle">
+                            <label for="first" style="font-size: small; margin-top: 4px;">First</label>
+                        </div>
+                        <div class="inputdiv">
+                            <input type="text" name="last" required class="inputstyle">
+                            <label for="last" style="font-size: small; margin-top: 4px;">Last</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="calender">When are you leaving us?</label> <br>
+                    <input type="date" name="date" required style="margin-top: 4px;" class="inputstyle"> <br>
+                    <label for="date" style="font-size: small; margin-top: 4px;">dd-mm-yyyy</label>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="ratings">Please rate your experience in our company.</label>
+                    <div style="margin-top: 4px;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="textarea1">How much have you learned from your time with us?</label> <br>
+                    <textarea name="textarea1" id="" rows="6" cols="70" style="margin-top: 4px;"
+                        class="textareastyle"></textarea>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="textarea2">Can we have your autograph, one last time?</label> <br>
+                    <textarea name="textarea2" id="" rows="6" cols="70" style="margin-top: 4px;"
+                        class="textareastyle"></textarea>
+                </div>
+
+                <input type="submit"
+                    style="color: white; background-color: #FD636D; display: flex; margin: auto; height: 30px; width: 80px; border: none; border-radius: 16px; font-weight: 600;">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container1">
+            <h2>Reunion Form</h2>
+        </div>
+
+        <div class="container2">
+            <div class="detailsContainer">
+                <p class="details"><span class="span1">Date</span><span class="span2">:</span><span class="span3">01-05-2027</span>
+                </p>
+                <p class="details"><span class="span1">Time</span><span class="span2">:</span><span class="span3">6pm Onwards</span>
+                </p>
+                <p class="details"><span class="span1">Place</span><span class="span2">:</span><span class="span3">ABC Parks, Austin
+                        City, Texas</span></p>
+            </div>
+
+            <form action="" method="get">
+                <div class="inputContainer">
+                    <label for="name" class="label">Name <span class="required">*</span></label>
+                    <div class="nameContainer">
+                        <div class="nameInput">
+                            <input type="text" name="first" class="inputFeild" required>
+                            <label for="first" class="subName">First</label>
+                        </div>
+                        <div class="nameInput">
+                            <input type="text" name="last" class="inputFeild" required>
+                            <label for="last" class="subName">Last</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="passedout" class="label">Year of Passing <span class="required">*</span></label>
+                    <select name="passedout" class="inputFeild" id="">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                    </select>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="guests" class="label">Guests Name <span class="required">*</span></label>
+                    <input type="text" name="guests" class="inputFeild" required>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="email" class="label">Email <span class="required">*</span></label>
+                    <input type="email" name="email" class="inputFeild" required>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="question1" class="label">Would you like a souvenir? <span class="required">*</span></label>
+                    <div class="inputChoice">
+                        <input type="radio" name="question1" value="yes" required>
+                        <label for="">Yes</label>
+                    </div>
+                    <div class="inputChoice">
+                        <input type="radio" name="question1" value="no" required>
+                        <label for="">No</label>
+                    </div>
+                </div>
+
+                <div class="inputContainer">
+                    <label for="question2" class="label">What would you like? <span class="required">*</span></label>
+                    <div class="inputChoice">
+                        <input type="radio" name="question2" value="photos" required>
+                        <label for="">Photos</label>
+                    </div>
+                    <div class="inputChoice">
+                        <input type="radio" name="question2" value="videos" required>
+                        <label for="">A DVD Video</label>
+                    </div>
+                </div>
+
+                <div class="submitContainer">
+                    <input class="submitButton" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

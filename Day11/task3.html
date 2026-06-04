@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .background {
+            background-color: skyblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: white;
+            color: rgb(31, 118, 250);
+            width: 500px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 16px;
+        }
+
+        .formstyle {
+            padding: 16px;
+        }
+
+        .inputstyle {
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body class="background">
+
+    <div class="box">
+        <h2 style="text-align: center;">Asset Request Form</h2>
+        <hr>
+
+        <form action="./result.html" method="get" class="formstyle">
+
+            <div style="margin-bottom: 16px;">
+                <label for="fullname">Name</label>
+                <div style="display: flex; gap: 16px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="text" name="first" class="inputstyle" style="width: 220px;" required>
+                        <label for="first">First</label>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="text" name="last" class="inputstyle" style="width: 220px;" required>
+                        <label for="last">Last</label>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; margin-bottom: 16px;">
+                <label for="employeeid">Employee ID</label>
+                <input type="text" name="employeeid" id="" class="inputstyle" required>
+            </div>
+
+            <div style="display: flex; flex-direction: column; margin-bottom: 16px;">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="inputstyle" required>
+            </div>
+
+            <div style="display: flex; flex-direction: column; margin-bottom: 16px;">
+                <label for="department">Department</label>
+                <input type="text" name="department" class="inputstyle" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="issue">Issue</label> <br>
+                <input type="checkbox" value="new assets required">
+                <label for="issue">New assets required</label> <br>
+                <input type="checkbox" value="replacement for broken/faulty device">
+                <label for="issue">Replacement for broken/faulty device</label> <br>
+                <input type="checkbox" value="replacement for lost device">
+                <label for="issue">Replacement for lost device</label> <br>
+                <input type="checkbox" value="other reason">
+                <label for="issue">Other reason</label> <br>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="assetsrequired">Assets Required</label> <br>
+                <input type="checkbox" value="laptop">
+                <label for="assetsrequired">Laptop</label> <br>
+                <input type="checkbox" value="desktop">
+                <label for="assetsrequired">Desktop</label> <br>
+                <input type="checkbox" value="wireless keyboard">
+                <label for="assetsrequired">Wireless Keyboard</label> <br>
+                <input type="checkbox" value="wireless mouse">
+                <label for="assetsrequired">Wireless Mouse</label> <br>
+            </div>
+
+            <input type="submit"
+                style="color: white; background-color: maroon; font-weight: 400; font-size: medium; border: none; display: flex; margin: auto; height: 36px; width: 100px; border-radius: 16px;">
+        </form>
+    </div>
+</body>
+
+</html>

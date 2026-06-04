@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1><center>Forms</center></h1>
+
+    <form action="./result.html" method="get">
+        <label for="fullname">Name <span style="color: red;">*</span></label> <br>
+        <input type="text" name="fullname" placeholder="Enter your fullname" required> <br> <br>
+
+        <label for="age">Age <span style="color: red;">*</span></label> <br>
+        <input type="number" name="age" placeholder="Enter your age" required> <br> <br>
+
+        <label for="gender">Gender <span style="color: red;">*</span></label> <br>
+        <input type="radio" name="gender" value="Male" required>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="Female" required>
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" value="Transgender" required>
+        <label for="gender">Trangender</label> <br> <br>
+
+        <label for="dob">Date of Birth <span style="color: red;">*</span></label> <br>
+        <input type="date" name="dof" required> <br> <br>
+
+        <label for="qualification">Degree</label> <br>
+        <select name="qualification" id="">
+            <option value="B.E">B.E</option>
+            <option value="M.E">M.E</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="M.Sc">M.Sc</option>
+            <option value="B.A">B.A</option>
+            <option value="M.A">M.A</option>
+        </select> <br> <br>
+
+        <label for="phone">Mobile No. <span style="color: red;">*</span></label> <br>
+        <input type="tel" max="10" placeholder="Enter your mobile number" required> <br> <br>
+
+        <label for="skills">Skills</label> <br>
+        <input name="skills" type="checkbox" value="html">
+        <label for="skills">HTML</label> <br>
+        <input name="skills" type="checkbox" value="css">
+        <label for="skills">CSS</label> <br>
+        <input name="skills" type="checkbox" value="js">
+        <label for="skills">JavaScript</label> <br>
+        <input name="skills" type="checkbox" value="java">
+        <label for="skills">Java</label> <br> <br>
+
+        <label for="feedback">Feedback <span style="color: red;">*</span></label> <br>
+        <textarea name="feedback" id="" rows="5" cols="20" placeholder="Enter your feedback..." required></textarea> <br> <br>
+
+        <label for="photo">Attach your photo <span style="color: red;">*</span></label> <br>
+        <input type="file" name="photo" type="jpeg, jpg, png" id="" required> <br> <br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

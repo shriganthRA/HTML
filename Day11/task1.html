@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body style="
+      background: linear-gradient(to top, #392108f2, #744402f1);
+      background-attachment: fixed;
+    ">
+  <center>
+    <h1 style="color: white">Simple Task Widget</h1>
+  </center>
+
+  <div style="display: flex; justify-content: center; align-items: center">
+    <form action="./result.htmlz" method="get" style="
+          border: 2px solid white;
+          color: white;
+          width: fit-content;
+          padding: 20px;
+        ">
+      <div>
+        <label for="task"><span style="color: red">*</span> Task : </label>
+        <input type="text" name="task" placeholder="Enter your task..." required style="margin-left: 80px" />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="dateTime"><span style="color: red">*</span> Date / Time :
+        </label>
+        <input type="date" name="dateTime" required style="margin-left: 33px" />
+        <input type="time" name="dateTime" required />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="category"><span style="color: red">*</span> Category :
+        </label>
+        <select name="category" id="" required style="margin-left: 48px">
+          <option value="none">None</option>
+          <option value="frontend">Frontend</option>
+          <option value="frontend">Backend</option>
+        </select>
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="calender"><span style="color: red">*</span> Calender :
+        </label>
+        <input type="date" name="calender" required style="margin-left: 48px" />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="priority"><span style="color: red">*</span> Priority :
+        </label>
+        <select name="priority" id="" required style="margin-left: 57px">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="risk"><span style="color: red">*</span> Risk level :
+        </label>
+        <select name="risk" id="" required style="margin-left: 42px">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="remainder"><span style="color: red">*</span> Remainder :
+        </label>
+        <input type="text" placeholder="Add Remainder" required style="margin-left: 38px" />
+      </div>
+      <br />
+      <br />
+
+      <center>
+        <input type="submit" name="" id="" style="
+              background-color: red;
+              color: white;
+              border: none;
+              height: 30px;
+              width: 100px;
+              border-radius: 4px;
+              font-weight: bold;
+            " />
+      </center>
+    </form>
+  </div>
+</body>
+
+</html>

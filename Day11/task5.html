@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .background {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            border: 1px solid black;
+            border-radius: 8px;
+            width: 500px;
+        }
+
+        .box1 {
+            border-bottom: 1px solid black;
+        }
+
+        .box2 {
+            padding: 24px;
+        }
+
+        .inputstyle {
+            display: flex;
+            flex-direction: column;
+            width: 226px;
+        }
+    </style>
+
+</head>
+
+<body class="background">
+
+    <div class="box">
+        <div class="box1">
+            <h2 style="padding-left: 16px;">Online Booking Form</h2>
+        </div>
+
+        <div class="box2">
+            <form action="./result.html" method="get">
+                
+                <div style="margin-bottom: 16px;">
+                    <label for="fullname">Name</label>
+                    <div style="display: flex; gap: 16px; margin-top: 4px;">
+                        <div class="inputstyle">
+                            <input type="text" name="first" id="" style="height: 20px;" required>
+                            <label for="first" style="font-size: small;">First</label>
+                        </div>
+                        <div class="inputstyle">
+                            <input type="text" name="last" id="" style="height: 20px;" required>
+                            <label for="last" style="font-size: small;">Last</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" required style="margin-top: 4px; height: 20px; width: 208px;">
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="mobile">Mobile Number</label> <br>
+                    <input type="tel" name="mobile" required style="margin-top: 4px; height: 20px; width: 208px;">
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="booking">Desired Booking Date & Time</label>
+                    <div style="margin-top: 4px; display: flex; gap: 8px;">
+                        <div>
+                            <input type="date" name="date" style="height: 20px;" required> <br>
+                            <label for="date" style="font-size: small;">Date</label>
+                        </div>
+                        <div style="display: flex; gap: 2px;">
+                            <div>
+                                <input type="number" name="hours" min="0" max="23" placeholder="00"
+                                    style="width: 50px; height: 20px;" required>
+                                <br>
+                                <label style="font-size: small;">Hours</label>
+                            </div>
+                            <span>:</span>
+                            <div>
+                                <input type="number" name="minutes" min="0" max="59" placeholder="00"
+                                    style="width: 50px; height: 20px;" required>
+                                <br>
+                                <label style="font-size: small;">Minutes</label>
+                            </div>
+                        </div>
+                        <select name="" id="" required style="height: 23px;">
+                            <option value="am">AM</option>
+                            <option value="pm">PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="type">Are you a</label> <br>
+                    <input type="radio" value="new customer" name="type" id="" style="margin-top: 4px;">
+                    <label for="type">New Customer</label> <br>
+                    <input type="radio" value="existing customer" name="type" id="">
+                    <label for="type">Existing Customer</label> <br>
+                    <input type="radio" value="others" name="type" id="">
+                    <label for="type">Others</label>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="query1">Which procedure do you want to have?</label> <br>
+                    <textarea name="query1" id="" rows="5" cols="58" style="margin-top: 4px;"></textarea>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label for="query2">Additional Message: </label> <br>
+                    <textarea name="query2" id="" rows="5" cols="58" style="margin-top: 4px;"></textarea>
+                </div>
+
+                <input type="submit"
+                    style="display: flex; margin: auto; height: 30px; width: 80px; border-radius: 8px; border: none; color: white; background-color: green;">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
