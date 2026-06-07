@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: ;
 }
 
 header {
@@ -90,15 +91,21 @@ nav ul li a {
 
 .section1 {
     position: relative;
-    display: inline-block;
+    background: url(../../fixtures/pexels-zhangkaiyv-1139556.jpg) no-repeat center center;
     width: 100vw;
-}
-.section1 img {
-    width: 100vw;
-    display: block;
     height: 90vh;
-    z-index: -1;
+    background-size: cover;
+    overflow: auto;
 }
+
+.section2 {
+    height: 90vh;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
 .overlay-text {
     position: absolute;
     top: 50%;
@@ -107,4 +114,101 @@ nav ul li a {
     color: white;
     font-size: xx-large;
     background: rgba(0, 0, 0, 0.5);
+}
+
+.about-topic {
+    display: flex;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+.about-describe {
+    padding: 56px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.describe {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.describe img {
+    width: 120px;
+    padding: 8px;
+}
+.describe q, li {
+    line-height: 1.5rem;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #DDB982;
+    border-bottom: 1px solid #DDB982;
+    padding: 24px;
+    position: relative;
+    margin-top: 120px;
+}
+.review .start-rating .checked {
+    color: #DDB982;
+}
+.review .start-rating .checked:hover {
+    color: #1E73BE;
+}
+
+footer {
+    height: 78vh;
+    background-color: #001B33;
+    color: white;
+    padding-top: 40px;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    row-gap: 64px;
+    column-gap: 56px;
+}
+
+.bulletin::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.solutions, .quicklinks, .services {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.aboutus, .address {
+    line-height: 1.5rem;
+}
+
+.footer-title {
+    font-size: x-large;
+    font-weight: 100;
+    color: #92D662 ;
+}
+
+.copyrights {
+    background-color: #001223;
+    color: white;
+    width: 100vw;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
 }
