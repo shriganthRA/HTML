@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: darkcyan;
+            color: white;
+            /* font-family: sans-serif; */
+        }
+
+        nav ul {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            color: white;
+            font-size: medium;
+            font-weight: 600;
+            padding: 2px;
+        }
+
+        /* .nav-btn:hover, */
+        .nav-btn.active {
+            color: #E9D7A5;
+            border-bottom: 2px solid #E9D7A5;
+        }
+
+        main {
+            margin-top: 8px;
+        }
+
+        .section2 {
+            background-color: darkcyan;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            border-radius: 16px;
+        }
+
+        #image {
+            width: 240px;
+            border-radius: 16px;
+            box-shadow: 0px 0px 16px rgb(54, 89, 91);
+        }
+
+        #title {
+            text-align: center;
+            font-weight: bolder;
+            font-size: large;
+            padding: 4px;
+        }
+
+        #describe {
+            text-align: justify;
+            line-height: 32px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-indent: 24px;
+            color: white;
+        }
+
+        .section3 {
+            background-color: darkcyan;
+            margin-top: 8px;
+        }
+
+        .section3-title {
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-container {
+            padding: 24px;
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+            gap: 40px;
+        }
+
+        .product {
+            background-color: white;
+            width: fit-content;
+            height: 240px;
+            padding: 8px;
+            border-radius: 8px;
+            justify-self: center;
+            box-shadow: 0px 0px 16px rgb(0, 75, 75);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .product div {
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+        }
+
+        .img-container {
+            display: flex;
+            margin: auto;
+        }
+
+        .product-img {
+            width: 160px;
+        }
+
+        .product-title {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <h1>Electro Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="" class="nav-btn">Home</a></li>
+                <li><a href="" class="nav-btn">About</a></li>
+                <li><a href="#products" class="nav-btn">Products</a></li>
+                <li><a href="" class="nav-btn">Service</a></li>
+                <li><a href="" class="nav-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="slider1">
+                <h1>Upgrade Your Gear, Upgrade Yourself</h1>
+            </div>
+            <div class="slider2">
+                <img src="./fixtures/—Pngtree—pink headphones clip art illustration_18419144.png" width="100px" alt="">
+            </div>
+        </section>
+
+        <section class="section2">
+            <img id="image" src="../fixtures/iphone17.jpg" alt="">
+            <p id="title">i-Phone14</p>
+            <p id="describe">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, beatae molestias
+                explicabo sed perspiciatis voluptatem eligendi molestiae placeat commodi ullam dolore dolorum rem?
+                Accusantium perspiciatis omnis reiciendis nihil veniam nostrum.
+                Consequatur dolorum totam commodi, repellat veritatis voluptate maiores recusandae harum, perferendis
+                quae necessitatibus maxime cum consectetur odio, asperiores rem ullam laborum porro sapiente! Corrupti
+                perferendis numquam quas officiis, distinctio autem.
+                Quos, cupiditate non mollitia magni veritatis laboriosam distinctio sed minus velit hic consequuntur,
+                praesentium animi pariatur cumque similique recusandae laudantium. Vitae commodi hic recusandae quidem
+                inventore excepturi, nihil quas fugiat.
+                Voluptatum nisi labore fuga omnis vel atque consectetur, ad corrupti, quia itaque voluptatibus ullam
+                molestiae enim maiores vero, debitis deserunt quos ipsam sit. Facere doloremque placeat natus accusamus,
+                at quas.
+                Aspernatur ullam voluptates inventore assumenda blanditiis tempora dignissimos quod reprehenderit
+                quaerat? Voluptas laboriosam est blanditiis dolore, soluta deleniti quod cumque maxime sit perspiciatis
+                odit nihil animi quasi sint ab beatae?</p>
+        </section>
+
+        <section class="section3" id="products">
+            <div class="section3-title">
+                <h2>Our Products</h2>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/solarpanel.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Solar Panel</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/ac.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Air Conditioner</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/breadtoaster.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Bread Toaster</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/chimney.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Chimney</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/electriccooker.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Electric Cooker</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/fan.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Ceiling Fan</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/iphone17.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">i-Phone 14</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/macbookm4.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Macbook M4</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/washingmachine.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Washing Machine</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="product-img" src="../fixtures/waterheater.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="product-title">Water Heater</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const buttons = document.querySelectorAll('.nav-btn');
+        const activeIndex = localStorage.getItem("activeNav");
+
+        if (activeIndex != null) {
+            buttons[activeIndex].classList.add("active");
+        }
+
+        buttons.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                // Remove active from all
+                buttons.forEach(b => b.classList.remove("active"));
+                // Add active to clicked one
+                btn.classList.add('active')
+
+                // Store the index in localstorage
+                localStorage.setItem("activeNav", index)
+            });
+        });
+    </script>
+
+</body>
+
+</html>

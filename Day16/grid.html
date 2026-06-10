@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+        .grid-container {
+            height: 400px;
+            /* width: auto; */
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-auto-rows: 1fr;
+            grid-auto-flow: row;
+            align-items: center;
+            justify-items: center;
+            gap: 1em;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+        <div class="item">Item 15</div>
+        <div class="item">Item 16</div>
+        <div class="item">Item 17</div>
+        <div class="item">Item 16</div>
+        <div class="item">Item 17</div>
+        <div class="item">Item 17</div>
+        <div class="item">Item 16</div>
+        <div class="item">Item 17</div>
+    </div>
+
+</body>
+</html>
